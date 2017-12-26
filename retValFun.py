@@ -1,7 +1,6 @@
 import poisEventFun as pef
 import numpy as np
 import reallotFun as rllt
-import queueFun as qf
 
 def returnVal(valVec,carPol,iniCars,epsDltBase,conArr,repArr,upCarNum,rhoVal,cm1,cm2,rm1,rm2):
     # Simulation START here

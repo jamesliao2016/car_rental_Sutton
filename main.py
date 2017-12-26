@@ -3,6 +3,7 @@ if __name__ == '__main__':
     import numpy as np
     import reallotFun as rllt
     import retValFun as rvf
+    import policyImproveFun as pif
 
     import time
 
@@ -47,7 +48,7 @@ if __name__ == '__main__':
         print(valVec)
         print("--- %s seconds ---" % (time.time() - start_time))
 
-        carPolNew = polImprove(valVec, carPol, iniCars, epsDltBase, conArr, repArr, upCarNum, rhoVal,cm1,cm2,rm1,rm2)
+        carPolNew = pif.polImprove(valVec, carPol, iniCars, epsDltBase, conArr, repArr, upCarNum, rhoVal,cm1,cm2,rm1,rm2)
         print(carPolNew)
         print("--- %s seconds ---" % (time.time() - start_time))
         if carPolNew == carPol:
